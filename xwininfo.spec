@@ -1,16 +1,16 @@
 Name: xwininfo
 Version: 1.0.3
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Window information utility for X
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
-BuildRequires: libx11-devel >= 1.0.0
-BuildRequires: libxext-devel >= 1.0.0
-BuildRequires: libxmu-devel >= 1.0.0
-BuildRequires: x11-util-macros >= 1.0.1
+BuildRequires: x11-util-macros	>= 1.1.5
+BuildRequires: libx11-devel	>= 1.1.3
+BuildRequires: libxext-devel	>= 1.0.0
+BuildRequires: libxmu-devel	>= 1.0.3
 
 %description
 Xwininfo is a utility for displaying information about windows.
@@ -19,7 +19,7 @@ Xwininfo is a utility for displaying information about windows.
 %setup -q -n %{name}-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
+%configure	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
 %make
@@ -35,5 +35,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xwininfo
 %{_mandir}/man1/xwininfo.*
-
-
