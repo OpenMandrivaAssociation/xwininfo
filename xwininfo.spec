@@ -1,5 +1,5 @@
 Name: xwininfo
-Version: 1.0.5
+Version: 1.1.0
 Release: %mkrel 1
 Summary: Window information utility for X
 Group: Development/X11
