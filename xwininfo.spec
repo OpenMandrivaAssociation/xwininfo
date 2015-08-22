@@ -1,3 +1,5 @@
+%define _disable_rebuild_configure 1
+
 Name:		xwininfo
 Version:	1.1.3
 Release:	9
