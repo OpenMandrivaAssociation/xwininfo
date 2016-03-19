@@ -2,7 +2,7 @@
 
 Name:		xwininfo
 Version:	1.1.3
-Release:	10
+Release:	11
 Summary:	Window information utility for X
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
