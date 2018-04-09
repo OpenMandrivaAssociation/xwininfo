@@ -1,8 +1,8 @@
 %define _disable_rebuild_configure 1
 
 Name:		xwininfo
-Version:	1.1.3
-Release:	11
+Version:	1.1.4
+Release:	1
 Summary:	Window information utility for X
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
